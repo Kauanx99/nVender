@@ -81,9 +81,6 @@ public class BukkitListeners implements Listener {
 						p.closeInventory();
 						VendaMenu.openMenu(p);
 						return;
-					case "§7Vender":
-						new VendaCore(p, VendaCore.Type.VENDA_NORMAL, plugin);
-						return;
 					case "§7Venda Shift":
 						if (!p.hasPermission(Settings.PERMISSION_SHIFT.getString())) {
 							p.sendMessage("§cVocê não tem permissão para usar a venda por shift.");
